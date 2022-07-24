@@ -1,0 +1,46 @@
+{
+    "name": "Friday Filter Bot V2",
+    "description": "A Filter Bot Which Doesnt Need Manual Filter Adding",
+    "logo": "https://telegra.ph/file/f94c840f80c54492f6d8c.jpg",
+    "keywords": [
+        "Auto",
+        "Filter",
+        "Mongo DB"
+    ],
+    "website": "https://github.com/MasterShad0w",
+    "repository": "https://github.com/MasterShad0w/FridayFilterBot",
+    "success_url": "https://telegram.dog/ShadowsArena",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From @ShadowScrapperBot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From @ShadowScrapperBot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "DB_URI": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com, for tutorial https://youtu.be/ttX4OEYwpCQk",
+            "value": ""
+        },
+        "USER_SESSION": {
+            "description": "A Pyrogram User Session String. Generated From @PyrogramStringBot",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
